@@ -1,0 +1,21 @@
+{
+    "name": "Christopher Williams Resume Site",
+    "short_name": "Chris Williams Site",
+    "start_url": "/index.html",
+    "scope": "./",
+    "theme_color": "#F9D8A3",
+    "background_color": "#03172E",
+    "icons": [
+        {
+            "src": "/images/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "display": "standalone"
+}

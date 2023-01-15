@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A portfolio / resume site for Christopher Williams, a software engineer based in the UK.">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="manifest" href="/manifest.json">
+        <script defer src="https://kit.fontawesome.com/c18df075a8.js" crossorigin="anonymous"></script> 
+        <script defer src="./js/allpages.js"></script>
+        <title>Home - Chris Williams</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <!-- Takes up 100% of page -->
+            <header>
+                <div id="header-bar">
+                    <div id="header-text">
+                        <a href="./index.html" class="site-home-link">
+                            <h1 class="gradient-headline-text">Christopher Williams</h1>
+                        </a>
+                        <h2>- Software Engineer -</h2>
+                    </div>
+                    <div id="nav-link-container">
+                        <!-- Navigation Links Here -->
+                        <!-- <a href="./index.html" class="active-page">Home</a> -->
+                        <a href="./education.html">Education</a>
+                        <a href="./career.html">Career</a>
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./javascript.html">JS</a>
+                        <a href="./testimonials.html">Testimonials</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Bespoke page content appears underneath -->
+
+            <section id="content-container">
+                <h1 class="gradient-headline-background section-headline">About Me</h1>  
+                <div class="section-container">
+                    <div id="avatar-container">
+                        <picture>
+                            <source media="(min-width: 900px)" srcset="./images/webp/avatar_webp_high_res.webp" type="image/webp">
+                            <source media="(min-width: 900px)" srcset="./images/legacy/avatar_png_high_res.png" type="image/png">
+                            <source media="(min-width: 300px)" srcset="./images/webp/avatar_webp_low_res.webp" type="image/webp">
+                            <source media="(min-width: 300px)" srcset="./images/legacy/avatar_png_low_res.png" type="image/png">
+                            <img class="avatar-image" src="./images/legacy/avatar_png_high_res.png" alt="My Avatar">
+                        </picture>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="info-pane info-pane-no-padding">
+                                <div class="info-pane-content">
+                                    <h3>Welcome to my website...</h3>
+                                    <br>
+                                    <p>This site was written in HTML, CSS and 'vanilla' Javascript; without reliance on frameworks, pre-processors or other tools.</p>
+                                    <br>
+                                    <p>Use the navigation links to find out about my academic and professional background, view portfolio example videos, interact with some JavaScript functions and get in contact with me.</p>
+                                </div>
+                            </div>
+                            <div class="info-pane info-pane-no-padding">
+                                <h1 class="gradient-headline-background info-pane-heading">Nice to Know...</h1>
+                                <div class="info-pane-content">
+                                    <p>Away from programming I enjoy cooking, going for long hikes and playing guitar and drums.</p>
+                                    <br>
+                                    <p>I have played guitar in several bands, developing a passion for music production as a hobby which led to me producing two full length albums and several demo EPs which received airplay on national radio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                   
+            </section>
+
+            <!-- End of bespoke page content -->
+
+            <div id="footer-bar">
+                <div id="footer-container">
+                    <div>
+                        <p id="footer-copyright-info">Copyright Christopher Williams <span id="copyright-year">YYYY</span>.</p>
+                        <p style="color: inherit; padding-bottom: 15px;">chrisinoz2003@NOSPAMyahoo.com</p>
+                    </div>
+                    <div id="external-site-links">
+                        <a href="https://www.linkedin.com/in/christopher-williams-21806577/" class="fab fa-linkedin fa-2x"></a>
+                        <a href="https://github.com/Bungle1981" class="fab fa-github fa-2x"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            if (!navigator.serviceWorker.controller) {
+                navigator.serviceWorker.register("/service-worker.js").then(function(reg) {
+                    console.log("Service worker has been registered for scope: " + reg.scope);
+                });
+            }
+           </script>
+    </body>
+</html>
